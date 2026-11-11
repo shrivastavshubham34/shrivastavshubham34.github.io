@@ -1,49 +1,66 @@
 baseURL = "https://shubhh.is-a.dev/"
 locale = "en-us"
-title = "Shubham"
-theme = "PaperMod"
+theme = "terminal"
 enableRobotsTXT = true
 
 [pagination]
-  pagerSize = 10
-
-[params]
-  env = "production"
-  description = "DevOps engineer — CI/CD, cloud infrastructure, and incident write-ups."
-  author = "Shubham"
-  defaultTheme = "auto"
-  ShowReadingTime = true
-  ShowPostNavLinks = true
-  ShowCodeCopyButtons = true
-  ShowToc = true
-
-  [params.homeInfoParams]
-    Title = "Hi, I'm Shubham 👋"
-    Content = "DevOps engineer. I build CI/CD pipelines, run cloud infrastructure, and write about what broke and how I fixed it."
-
-  [[params.socialIcons]]
-    name = "github"
-    url = "https://github.com/shrivastavshubham34"
-  [[params.socialIcons]]
-    name = "linkedin"
-    url = "https://www.linkedin.com/in/YOUR_LINKEDIN/"
-  [[params.socialIcons]]
-    name = "rss"
-    url = "/index.xml"
-
-[menu]
-  [[menu.main]]
-    name = "Blog"
-    url = "/posts/"
-    weight = 10
-  [[menu.main]]
-    name = "Projects"
-    url = "/projects/"
-    weight = 20
-  [[menu.main]]
-    name = "Resume"
-    url = "/resume/"
-    weight = 30
+  pagerSize = 5
 
 [markup.highlight]
   noClasses = false
+
+[markup.goldmark.renderer]
+  unsafe = true
+
+[params]
+  contentTypeName = "posts"
+  showMenuItems = 5
+  centerTheme = true
+  readingTime = true
+  dateFormat = "2006-01-02"
+
+[languages]
+  [languages.en]
+    label = "English"
+    title = "shubhh"
+
+    [languages.en.params]
+      subtitle = "Senior DevOps Engineer · CKA · things that broke at 3am"
+      owner = "Shubham Shrivastava"
+      keywords = "devops, sre, aws, kubernetes, terraform, ci/cd"
+      copyright = "© Shubham Shrivastava · built with Hugo, shipped by GitHub Actions"
+      readMore = "cat more"
+      readOtherPosts = "Read other posts"
+      missingContentMessage = "404: command not found"
+      missingBackButtonLabel = "cd ~"
+
+      [languages.en.params.logo]
+        logoText = "shubhh@prod:~$"
+        logoHomeLink = "/"
+
+    [languages.en.menu]
+      [[languages.en.menu.main]]
+        identifier = "posts"
+        name = "blog"
+        url = "/posts/"
+        weight = 10
+      [[languages.en.menu.main]]
+        identifier = "projects"
+        name = "projects"
+        url = "/projects/"
+        weight = 20
+      [[languages.en.menu.main]]
+        identifier = "resume"
+        name = "resume"
+        url = "/resume/"
+        weight = 30
+      [[languages.en.menu.main]]
+        identifier = "github"
+        name = "github"
+        url = "https://github.com/shrivastavshubham34"
+        weight = 40
+      [[languages.en.menu.main]]
+        identifier = "linkedin"
+        name = "linkedin"
+        url = "https://www.linkedin.com/in/sshrivastav34/"
+        weight = 50

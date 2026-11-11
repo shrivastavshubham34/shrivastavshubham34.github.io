@@ -1,5 +1,5 @@
 ---
-title: "This site is deployed with GitHub Actions"
+title: "hello, world: this site ships itself"
 date: 2026-11-11
 tags: ["github-actions", "hugo", "devops"]
 draft: false

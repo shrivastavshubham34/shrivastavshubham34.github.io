@@ -1,0 +1,6 @@
+:root {
+  --background: #0d1117;
+  --foreground: #d1d7e0;
+  --accent: #3fb950;
+}
+.index-content pre { border-color: var(--accent); }
