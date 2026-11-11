@@ -1,0 +1,49 @@
+baseURL = "https://shubhh.is-a.dev/"
+locale = "en-us"
+title = "Shubham"
+theme = "PaperMod"
+enableRobotsTXT = true
+
+[pagination]
+  pagerSize = 10
+
+[params]
+  env = "production"
+  description = "DevOps engineer — CI/CD, cloud infrastructure, and incident write-ups."
+  author = "Shubham"
+  defaultTheme = "auto"
+  ShowReadingTime = true
+  ShowPostNavLinks = true
+  ShowCodeCopyButtons = true
+  ShowToc = true
+
+  [params.homeInfoParams]
+    Title = "Hi, I'm Shubham 👋"
+    Content = "DevOps engineer. I build CI/CD pipelines, run cloud infrastructure, and write about what broke and how I fixed it."
+
+  [[params.socialIcons]]
+    name = "github"
+    url = "https://github.com/shrivastavshubham34"
+  [[params.socialIcons]]
+    name = "linkedin"
+    url = "https://www.linkedin.com/in/YOUR_LINKEDIN/"
+  [[params.socialIcons]]
+    name = "rss"
+    url = "/index.xml"
+
+[menu]
+  [[menu.main]]
+    name = "Blog"
+    url = "/posts/"
+    weight = 10
+  [[menu.main]]
+    name = "Projects"
+    url = "/projects/"
+    weight = 20
+  [[menu.main]]
+    name = "Resume"
+    url = "/resume/"
+    weight = 30
+
+[markup.highlight]
+  noClasses = false
